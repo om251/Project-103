@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet"href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <title>
+            Face Recognition
+        </title>
+    </head>
+    <body>
+        <h1>
+            Face Recognition Web App
+        </h1>
+        <h3>Model is trained to identify the following object</h3>
+
+        <button id="Family1"> Father</button><br><br>
+        <button id="Family1"> Mother</button><br><br>
+        <button id="Family1"> Myself</button><br><br><br>
+
+        <label>Webcam view -</label>
+        <div id="webCam"><style>
+            div{
+                border: 3px dashed white;
+                height: 250px;
+                width: 350px;
+            }
+        </style>
+
+        </div>
+        <br><br>
+        <button class="btn btn-primary" onclick="takeImgae()">Capture Image</button><br><br>
+        <button class="btn btn-success" onclick="identifyImgae()">Identify Imgae</button>
+        
+    </body>
+</html>
